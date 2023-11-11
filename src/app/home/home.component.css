@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
+    font-size: 50px;
+}
+
+.apuesta-section {
+    text-align: center;
+    border: solid 1px;
+    margin-top: 10px;
+    background-color: rgba(245, 245, 245, 0.8) ;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.apuesta-info {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid;
+
+}
+
+.selectionBoxes {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(64, 81, 112, 0.4);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.list li {
+    margin: 5px;
+}
+
+.apuesta {
+    cursor: pointer;
+}
+
+button {
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 8px 12px;
+    background: none;
+    cursor: pointer;
+}

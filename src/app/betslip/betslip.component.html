@@ -1,0 +1,14 @@
+<h1>BetSlip</h1>
+<div class="BetSlip">
+    <h2 *ngIf="apuestas.length === 0">No bets selected yet</h2>
+    <ul>
+        <li class="cardBet" *ngFor="let apuesta of apuestas">
+            <h3 class="apuesta">{{ apuesta.data.name }} - {{ apuesta.data.price }}</h3>
+            <button (click)="eliminarApuesta(apuesta.id)"> Eliminar </button>
+        </li>
+    </ul>
+</div>
+
+<button mat-fab color="primary" class="home-button" (click)="irAHome()">
+    <mat-icon>home</mat-icon>
+</button>

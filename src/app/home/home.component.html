@@ -1,0 +1,17 @@
+<h1>Bet Events</h1>
+<div *ngFor="let apuesta of bets" class="apuesta-section">
+    <h3 (click)="toggleInfo(apuesta)" class="apuesta">{{ apuesta.name }}</h3>
+    <div class="apuesta-info" *ngIf="apuesta.showInfo">
+        <div *ngFor="let market of apuesta.markets" class="selectionBoxes">
+            <h4>{{ market.name }}</h4>
+            <ul class="list">
+                <li *ngFor="let selection of market.selections">
+                    <button (click)="changeButtonColor(selection)" [ngStyle]="{'background-color': selection.clicked ? 'green' : ''}" [ngStyle]="getButtonStyle(selection)">
+                        {{ selection.name }} - {{ selection.price }}
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<app-shopping-cart></app-shopping-cart>
